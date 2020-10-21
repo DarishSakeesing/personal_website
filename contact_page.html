@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+
+    <link rel="stylesheet" href="contact_page.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+
+    <div class="page">
+        
+        <p class="title animate__animated animate__fadeInUp">Let's Talk</p>
+        <div id="shy">
+            <div class="line2"></div>
+            <p class="q animate__animated animate__fadeInUp">Tell me about your company or startup.</p>
+            <p class="q animate__animated animate__fadeInUp">In which role do you see me?</p>
+            <p class="q animate__animated animate__fadeInUp">Do you require me to work locally or remote?</p>
+        </div>
+        <div class="line"></div>
+    
+    
+        <form class="form animate__animated animate__fadeInUp">
+            <label for="name" id="name_question"> Why don't we start with your name?</label>
+            <input type="text" id="name" placeholder="Type Your Name" class="name" oninput='changeColor()'>
+            <div id="bottom" class="animate__animated animate__fadeInUp">
+                <label for="email" id="email_question">Email:</label>
+                <input type="text" id="email" placeholder="Type Your Email" class="email">
+                <label for="message" id="message_question">Write your message:</label>
+                <textarea name="message" placeholder="Type Your Message" id="message"></textarea>
+                <button class="btn btn-pretty" onclick="sendMessage(); return false">SEND</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+    <script src="js/contact.js"></script>
+
+
+
+    
+
+    
+</body>
+</html>

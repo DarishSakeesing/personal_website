@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    position: absolute;
+    width: 23%;
+    /* background-color: white; */
+    justify-content: space-around;
+    right: 0;
+    margin-right: 3%;    
+}
+
+nav > a {
+    text-decoration: none;
+    color: #161717;
+    font-family: 'Work Sans';
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 5%;
+
+
+}
+
+/* .name {
+    font-family: 'Playfair Display';
+    color: #161717;
+    text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    font-size: 7vw;
+} */
+
+.name {
+  margin: 0;
+  color: transparent;
+  font-size: 6vw;
+  font-family: 'Playfair Display';
+  text-shadow: 0px 0px 2px transparent;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 3000ms linear 3000ms infinite alternate;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 3000ms linear 3000ms infinite alternate;
+  
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    color: #161717;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    color: #161717;
+   
+  }
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px transparent;
+  }
+ to {
+   text-shadow: 0 0 90px white;
+ }
+ 
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px transparent;
+  }
+ to {
+   text-shadow: 0 0 90px white;
+ }
+}
+  
+
+.icons {
+    display: flex;
+    width: 9%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(247, 228, 233, 0.7); */
+    background-color: transparent;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+
+.icons > a {
+    margin: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: none;
+    color: transparent;
+    font-size: 1.9rem;
+    /* display: flex; */
+}
+
+.icons > a > i {
+    padding-top: 21%;
+    text-shadow: 1px 1px 2px transparent;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 3000ms linear 3000ms infinite alternate;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 3000ms linear 3000ms infinite alternate;
+}
